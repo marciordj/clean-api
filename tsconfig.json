@@ -4,13 +4,6 @@
     "module": "commonjs",
     "target": "es2018",
     "esModuleInterop": true,
-    "sourceMap": true,
-    "rootDir": "src",
-    "baseUrl": "src",
-    "paths": {
-      "@/*": ["*"]
-    }
-  },
-  "include": ["src"],
-  "exclude": []
+    "allowJs": true
+  }
 }
