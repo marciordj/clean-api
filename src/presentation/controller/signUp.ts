@@ -1,19 +1,7 @@
-// interface IRequest {
-//   body: {
-//     name: any
-//     email: any
-//     password: any
-//     passwordConfirmation: any
-//   }
-// }
-
-// interface IResponse {
-//   statusCode: number
-//   body: any
-// }
+import { HttpRequest, HttpResponse } from '../protocols/http'
 
 export class SignUpController {
-  handle (httpRequest: any): any {
+  handle (httpRequest: HttpRequest): HttpResponse {
     if (!httpRequest.body.name) {
       return {
         statusCode: 400,
